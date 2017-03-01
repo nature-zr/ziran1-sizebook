@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ca.ualberta.ziran1.ziran1_sizebook.userInput">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter a name:"
+                android:textSize="17sp"
+                android:textColor="#000000"/>
+
+            <TextView android:id="@+id/warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/name"
+                android:text="name field cannot be empty"
+                android:textSize="15sp"
+                android:textColor="#FFFFFF"/>
+
+            <EditText android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:hint="name"/>
+
+            <TextView android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_name"
+                android:text="Enter a date (YYYY-MM-DD):"
+                android:textSize="17sp"
+                android:textColor="#000000"/>
+
+            <EditText android:id="@+id/edit_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:hint="YYYY-MM-DD"/>
+
+            <TextView android:id="@+id/neck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_date"
+                android:text="Enter the neck size:"
+                android:textSize="17sp"
+                android:textColor="#000000"/>
+
+            <EditText android:id="@+id/edit_neck_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/neck"
+                android:hint="neck size"/>
+
+            <TextView android:id="@+id/bust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_neck_size"
+                android:text="Enter the bust size:"
+                android:textSize="17sp"
+                android:textColor="#000000"/>
+
+            <EditText android:id="@+id/edit_bust_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bust"
+                android:hint="bust size"/>
+
+            <TextView android:id="@+id/chest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_bust_size"
+                android:text="Enter the chest size:"
+                android:textSize="17sp"
+                android:textColor="#000000"/>
+
+            <EditText android:id="@+id/edit_chest_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chest"
+                android:hint="chest size"/>
+
+            <TextView android:id="@+id/waist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_chest_size"
+                android:text="Enter the waist size:"
+                android:textSize="17sp"
+                android:textColor="#000000"/>
+
+            <EditText android:id="@+id/edit_waist_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/waist"
+                android:hint="waist size"/>
+
+            <TextView android:id="@+id/hip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_waist_size"
+                android:text="Enter the hip size:"
+                android:textSize="17sp"
+                android:textColor="#000000"/>
+
+            <EditText android:id="@+id/edit_hip_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hip"
+                android:hint="hip size"/>
+
+            <TextView android:id="@+id/inseam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_hip_size"
+                android:text="Enter the length of inseam:"
+                android:textSize="17sp"
+                android:textColor="#000000"/>
+
+            <EditText android:id="@+id/edit_inseam_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inseam"
+                android:hint="inseam length"/>
+
+            <TextView android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_inseam_size"
+                android:text="Add some commments:"
+                android:textSize="17sp"
+                android:textColor="#000000"/>
+
+            <EditText android:id="@+id/edit_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comment"
+                android:hint="comments"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/save"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="Save"
+            android:onClick="store_info"/>
+
+        <Button android:id="@+id/cancel"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Cancel"
+            android:onClick="cancel"/>
+
+    </LinearLayout>
+</RelativeLayout>
